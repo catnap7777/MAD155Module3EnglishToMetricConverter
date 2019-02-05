@@ -1,23 +1,26 @@
 <resources>
     <string name="app_name">MAD155Module3EnglishToMetricConverter</string>
 
-    <string name="txtTitle">Convert English To Metric</string>
+    <string name="txtTitle">Easy Measurement Converter</string>
     <string name="txtNumber">Enter Number to be Converted</string>
     <string name="prompt">Select Conversion</string>
     <string name="txtSelectConversion">Select what type of conversion&#8230;</string>
     <string name="description">Image with conversion type logo</string>
     <string name="btnConvert">Convert</string>
+    <string name="usToMetric">U.S. to Metric</string>
+    <string name="metricToUS">Metric to U.S.</string>
 
     <string-array name="txtConversion">
-        <item>Inches to Centimeters</item>
-        <item>Feet to Meters</item>
-        <item>Yards to Meters</item>
-        <item>Miles to Kilometers</item>
-        <item>Fluid Ounces to Milliliters</item>
-        <item>Quarts to Liters</item>
-        <item>Ounces to Grams</item>
-        <item>Grams to Liters</item>
-        <item>Pounds to Kilograms</item>
+        <item>Inches &lt;--&gt; Centimeters</item>
+        <item>Feet &lt;--&gt; Meters</item>
+        <item>Yards &lt;--&gt; Meters</item>
+        <item>Miles &lt;--&gt; Kilometers</item>
+        <item>Fluid Ounces &lt;--&gt; Milliliters</item>
+        <item>Quarts &lt;--&gt; Liters</item>
+        <item>Gallons &lt;--&gt; Liters</item>
+        <item>Ounces &lt;--&gt; Grams</item>
+        <item>Pounds &lt;--&gt; Grams</item>
+        <item>Pounds &lt;--&gt; Kilograms</item>
     </string-array>
 
 </resources>
