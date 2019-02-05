@@ -41,16 +41,44 @@ public class MainActivity extends AppCompatActivity {
                             .show();
                 } else {
 
-                    numberToConvert = Integer.parseInt(txtNbr.getText().toString());
+                    //numberToConvert = Integer.parseInt(txtNbr.getText().toString());
+                    numberToConvert = Double.parseDouble(txtNbr.getText().toString());
                     double answer = 10;
+                    int convertTypeChoice = 0;
 
                     //totalCost = costPerTicket * numberOfTickets;
                     DecimalFormat formattedNbr = new DecimalFormat("###,###.##");
 
                     convertChoice = spnrConversion.getSelectedItem().toString();
 
+                    //convertTypeChoice = spnrConversion.getSelectedItemPosition();
+
+                    if(convertChoice.equalsIgnoreCase("inches to centimeters")) {
+                        answer = numberToConvert * 2.54;
+                        convertTypeChoice = 1;
+                    } else if (convertChoice.equalsIgnoreCase("feet to meters")){
+                        convertTypeChoice = 2;
+                    } else if (convertChoice.equalsIgnoreCase("yards to meters")){
+                        convertTypeChoice = 3;
+                    } else if (convertChoice.equalsIgnoreCase("miles to kilometers")){
+                        convertTypeChoice = 4;
+                    } else if (convertChoice.equalsIgnoreCase("fluid ounces to milliliters")){
+                        convertTypeChoice = 5;
+                    } else if (convertChoice.equalsIgnoreCase("quarts to liters")){
+                        convertTypeChoice = 6;
+                    } else if (convertChoice.equalsIgnoreCase("ounces to grams")){
+                        convertTypeChoice = 7;
+                    } else if (convertChoice.equalsIgnoreCase("grams to liters")){
+                        convertTypeChoice = 8;
+                    } else if (convertChoice.equalsIgnoreCase("pounds to kilograms")){
+                        convertTypeChoice = 9;
+
+                    } else {
+                        convertChoice = "other choice";
+                    }
+
                     results.setText("Conversion of " + numberToConvert + "\n(" + convertChoice + ") is: " +
-                            formattedNbr.format(answer));
+                            formattedNbr.format(answer) + " convertTypeChoice = " + convertTypeChoice);
                 }
 
             }

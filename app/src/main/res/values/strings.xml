@@ -14,10 +14,10 @@
         <item>Yards to Meters</item>
         <item>Miles to Kilometers</item>
         <item>Fluid Ounces to Milliliters</item>
-        <item>Quart to Liter</item>
-        <item>Ounce to Gram</item>
-        <item>Gram to Liter</item>
-        <item>Pound to Kilogram</item>
+        <item>Quarts to Liters</item>
+        <item>Ounces to Grams</item>
+        <item>Grams to Liters</item>
+        <item>Pounds to Kilograms</item>
     </string-array>
 
 </resources>
