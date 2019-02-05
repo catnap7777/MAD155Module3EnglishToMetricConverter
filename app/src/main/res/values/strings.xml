@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MAD155Module3EnglishToMetricConverter</string>
+
+    <string name="txtTitle">Convert English To Metric</string>
+    <string name="txtNumber">Enter Number to be Converted</string>
+    <string name="prompt">Select Conversion</string>
+    <string name="txtSelectConversion">Select what type of conversion&#8230;</string>
+    <string name="description">Image with conversion type logo</string>
+    <string name="btnConvert">Convert</string>
+
+    <string-array name="txtConversion">
+        <item>Inches to Centimeters</item>
+        <item>Feet to Meters</item>
+        <item>Yards to Meters</item>
+        <item>Miles to Kilometers</item>
+        <item>Fluid Ounces to Milliliters</item>
+        <item>Quart to Liter</item>
+        <item>Ounce to Gram</item>
+        <item>Gram to Liter</item>
+        <item>Pound to Kilogram</item>
+    </string-array>
+
+</resources>
