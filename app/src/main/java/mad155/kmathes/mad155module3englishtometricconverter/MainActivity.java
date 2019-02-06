@@ -16,7 +16,7 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity {
 
     double numberToConvert;
-    double convertedNumber;
+
     String convertChoice;
 
     @Override
@@ -28,16 +28,13 @@ public class MainActivity extends AppCompatActivity {
         final Spinner spnrConversion = (Spinner) findViewById(R.id.txtConversion);
         Button btnConvert = (Button) findViewById(R.id.btnConversion);
 
-        //final RadioButton rbUsToMetric = findViewById(R.id.rb1);
-        //final RadioButton rbMetricToUs = findViewById(R.id.rb2);
-
         btnConvert.setOnClickListener(new View.OnClickListener() {
 
             final TextView results = (TextView) findViewById(R.id.txtResult);
 
             final RadioButton rbUsToMetric = findViewById(R.id.rb1);
-            final RadioButton rbMetricToUs = findViewById(R.id.rb2);
-
+            final RadioButton rbMetricToUs = findViewById(R.id.rb2); // not really needed since there are only two choices
+                                                                     // ..and if stmts check for first radio button
             @Override
             public void onClick(View v) {
 
@@ -48,17 +45,16 @@ public class MainActivity extends AppCompatActivity {
                             .show();
                 } else {
 
-                    //numberToConvert = Integer.parseInt(txtNbr.getText().toString());
                     numberToConvert = Double.parseDouble(txtNbr.getText().toString());
-                    double answer = 10;
-                    int convertTypeChoice = 1;
+                    double answer = 0;
+                    //int convertTypeChoice = 1;  -- for if I was using position to determine selection instead
                     String txtConversionUsOrMetric = "";
 
                     DecimalFormat formattedNbr = new DecimalFormat("###,###,###.####");
 
                     convertChoice = spnrConversion.getSelectedItem().toString();
-
                     //convertTypeChoice = spnrConversion.getSelectedItemPosition();
+                    //   -- for if I was using position to determine selection instead
 
                     if (convertChoice.equalsIgnoreCase("inches <--> centimeters")) {
                         if (rbUsToMetric.isChecked()) {
@@ -165,7 +161,6 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         convertChoice = "other choice";
                     }
-
 
                     results.setText("Number (input) being converted: " + numberToConvert + "\n" +
                             txtConversionUsOrMetric + " \n" + convertChoice +
