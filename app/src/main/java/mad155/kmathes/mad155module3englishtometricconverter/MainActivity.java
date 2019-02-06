@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
                         convertChoice = "other choice";
                     }
 
+
                     results.setText("Number (input) being converted: " + numberToConvert + "\n" +
                             txtConversionUsOrMetric + " \n" + convertChoice +
                             "\n*** Answer:  " + formattedNbr.format(answer) + " ***");
